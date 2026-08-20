@@ -34,6 +34,9 @@
 
         <ul class="hero__skills">
           <li class="skill-tag">React.js</li>
+          <li class="skill-tag">React Router</li>
+          <li class="skill-tag">Zustand</li>
+          <li class="skill-tag">Vite</li>
           <li class="skill-tag">JavaScript (ES6+) / TypeScript</li>
           <li class="skill-tag">HTML5 / CSS3 / SASS / SCSS</li>
           <li class="skill-tag">REST API / Axios / Fetch</li>
@@ -64,10 +67,15 @@
         <p>Сентябрь 2025 — настоящее время</p>
 
         <ul class="ul">
-          <li><b>Разработка SPA и веб-приложений</b>: Проектирование компонентной архитектуры на React, управление локальным и глобальным состоянием, интеграция REST API</li>
-          <li><b>Сетевой слой и асинхронность</b>: Оптимизация работы с API, организация кэширования и фонового обновления данных, обработка асинхронных состояний (загрузка, ошибки, повторные запросы)</li>
-          <li><b>Проектирование и верстка</b>: Верстка сложного, адаптивного UI по Figma с соблюдением методологии BEM (SCSS / CSS Modules). Реализация кастомных анимаций, видео-бекграундов и динамических интерфейсных элементов без сторонних зависимостей</li>
-          <li><b>Инженерная и алгоритмическая база</b>: Разработка систем управления состоянием и архитектурных модулей на C# (Unity). Проектирование структур данных и клиент-серверного взаимодействия</li>
+          <li><b>Разработка SPA и веб-приложений</b>: Проектирование компонентной архитектуры на React, управление
+            локальным и глобальным состоянием, интеграция REST API</li>
+          <li><b>Сетевой слой и асинхронность</b>: Оптимизация работы с API, организация кэширования и фонового
+            обновления данных, обработка асинхронных состояний (загрузка, ошибки, повторные запросы)</li>
+          <li><b>Проектирование и верстка</b>: Верстка сложного, адаптивного UI по Figma с соблюдением методологии BEM
+            (SCSS / CSS Modules). Реализация кастомных анимаций, видео-бекграундов и динамических интерфейсных элементов
+            без сторонних зависимостей</li>
+          <li><b>Инженерная и алгоритмическая база</b>: Разработка систем управления состоянием и архитектурных модулей
+            на C# (Unity). Проектирование структур данных и клиент-серверного взаимодействия</li>
         </ul>
 
         <div class="meta">
@@ -117,7 +125,10 @@
       </p>
 
       <p class="p">
-        <b>Отношение к делу:</b> Фокусируюсь на компонентном подходе, чистой архитектуре и предсказуемом управлении состоянием. Имею практический коммерческий бэкграунд (3 года в e-commerce / маркетплейсах), благодаря чему глубоко понимаю бизнес-логику, интеграцию с бэкендом и верстку любой сложности. Спокойно восприятие код-ревью и конструктивный фидбек
+        <b>Отношение к делу:</b> Фокусируюсь на компонентном подходе, чистой архитектуре и предсказуемом управлении
+        состоянием. Имею практический коммерческий бэкграунд (3 года в e-commerce / маркетплейсах), благодаря чему
+        глубоко понимаю бизнес-логику, интеграцию с бэкендом и верстку любой сложности. Спокойно восприятие код-ревью и
+        конструктивный фидбек
       </p>
     </section>
 
@@ -126,6 +137,32 @@
       <h2 class="h2">Примеры работ</h2>
 
       <div class="projects">
+
+        <div class="card card_project">
+          <div class="card__text">
+            <h3 class="h3">Shield Auth (2026)</h3>
+            <p class="p">
+              Мини-приложение авторизации и управления пользовательским профилем, построенное на React + TypeScript с архитектурой Feature-Sliced Design. Проект имитирует полноценную работу клиентского приложения с mock API, хранением пользователей и системой ролей
+            </p>
+            <ul class="ul">
+              <li>Feature-Sliced Design (entities / features / shared / pages / widgets)</li>
+              <li>React Router (HashRouter) и защищённые маршруты</li>
+              <li>Авторизация, регистрация и хранение пользовательской сессии</li>
+              <li>Просмотр, редактирование профиля и смена пароля</li>
+              <li>Mock REST API с разделением userApi, authApi и userRepository</li>
+              <li>Локальное хранилище пользователей (localStorage) с тестовыми аккаунтами и ролями</li>
+              <li>CSS Modules, SCSS, единая дизайн-система и адаптивная верстка</li>
+              <li>Деплой через GitHub Pages и автоматическая публикация через GitHub Actions</li>
+            </ul>
+            <div class="meta">Стек: React · TypeScript · React Router · Zustand · SCSS · CSS Modules · Vite · GitHub Pages</div>
+            <div style="margin-top:18px;">
+              <a href="https://kostczev.github.io/shield-auth-react/" class="button button_primary"
+                target="_blank">Live</a>
+              <a href="https://github.com/Kostczev/shield-auth-react" class="button" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <img class="card__img" src="./img/shield-auth-react.png" alt="">
+        </div>
 
         <div class="card card_project">
           <div class="card__text">
@@ -140,7 +177,7 @@
               <li>Компонентный подход, кастомные хуки и управление состоянием</li>
               <li>Деплой и настройка CI/CD через GitHub Pages</li>
             </ul>
-            <div class="meta">Стек: HTML · CSS · Vanilla JS</div>
+            <div class="meta">Стек: React · TypeScript · Lightweight Charts · REST API · Axios · CSS · Vite</div>
             <div style="margin-top:18px;">
               <a href="https://kostczev.github.io/react-crypto-dashboard/" class="button button_primary"
                 target="_blank">Live</a>
